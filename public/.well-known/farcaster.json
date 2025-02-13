@@ -10,9 +10,9 @@
     "iconUrl": "https://pinata-blog-frame.pages.dev/icon.png",
     "homeUrl": "https://pinata-blog-frame.pages.dev",
     "imageUrl": "https://pinata-blog-frame.pages.dev/image.png",
-    "buttonTitle": "Check this out",
+    "buttonTitle": "Subscribe",
     "splashImageUrl": "https://pinata-blog-frame.pages.dev/splash.png",
-    "splashBackgroundColor": "#eeccff",
+    "splashBackgroundColor": "#171420",
     "webhookUrl": "https://frames.pinataipfs.com/webhook"
   }
 }
