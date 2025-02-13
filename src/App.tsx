@@ -9,7 +9,7 @@ function App() {
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
   const [context, setContext] = useState<Context.FrameContext>();
   const [frameAdded, setFrameAdded] = useState(false)
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const post = searchParams.get('post');
 
 
