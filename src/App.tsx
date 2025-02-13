@@ -80,7 +80,7 @@ function App() {
             onClick={redirect}
             className="bg-[#6E57FF] text-white font-semibold py-2 px-4 rounded-full m-2"
           >
-            View Latest Post
+            View Latest Posts
           </button>
 
         )}
