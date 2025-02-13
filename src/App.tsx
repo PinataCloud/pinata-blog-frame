@@ -2,11 +2,16 @@ import { useState, useEffect } from 'react'
 import sdk from '@farcaster/frame-sdk';
 import { Context } from '@farcaster/frame-sdk';
 import pinnie from "./assets/pinnie.png"
+import { useSearchParams } from 'react-router-dom';
+
 
 function App() {
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
   const [context, setContext] = useState<Context.FrameContext>();
   const [frameAdded, setFrameAdded] = useState(false)
+  const [searchParams, setSearchParams] = useSearchParams();
+  const post = searchParams.get('post');
+
 
   useEffect(() => {
     const load = async () => {
@@ -20,7 +25,7 @@ function App() {
 
       if (ctx.location?.type === "notification") {
         try {
-          sdk.actions.openUrl("https://pinata.cloud/blog");
+          sdk.actions.openUrl(`https://pinata.cloud/blog/${post}`);
           sdk.actions.close()
         } catch (error) {
           console.error("Redirect error:", error);
@@ -32,7 +37,7 @@ function App() {
       setIsSDKLoaded(true);
       load();
     }
-  }, [isSDKLoaded]);
+  }, [isSDKLoaded, post]);
 
   if (!isSDKLoaded) {
     return <div>Loading...</div>;
