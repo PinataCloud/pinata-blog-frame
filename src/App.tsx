@@ -74,7 +74,7 @@ function App() {
           </button>
 
         )}
-        {context && !context.client.added && (
+        {context && !context.client.added && !frameAdded && (
           <button
             onClick={addFrame}
             className="bg-[#6E57FF] text-white py-2 font-semibold px-4 rounded-full m-2"
