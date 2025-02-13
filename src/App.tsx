@@ -6,6 +6,7 @@ import pinnie from "./assets/pinnie.png"
 function App() {
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
   const [context, setContext] = useState<Context.FrameContext>();
+  const [frameAdded, setFrameAdded] = useState(false)
 
   useEffect(() => {
     const load = async () => {
@@ -14,7 +15,7 @@ function App() {
       sdk.actions.ready();
 
       sdk.on('frameAdded', () => {
-        setContext(ctx)
+        setFrameAdded(true)
       });
 
       if (ctx.location?.type === "notification") {
@@ -64,8 +65,7 @@ function App() {
         {context && (
           <p className='text-center'>Add this frame to automatically subscribe for new blog post notifcations!</p>
         )}
-
-        {context && context.client.added && (
+        {(context && context.client.added || frameAdded) && (
           <button
             onClick={redirect}
             className="bg-[#6E57FF] text-white font-semibold py-2 px-4 rounded-full m-2"
