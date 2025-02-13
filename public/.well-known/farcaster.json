@@ -1,18 +1,18 @@
 {
   "accountAssociation": {
     "header": "eyJmaWQiOjYwMjMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg0NTYxMzExNjFmODNDN0Q3ZkRBMTViMzJhNWY3QzIxRkQ0RTI3RTk2In0",
-    "payload": "eyJkb21haW4iOiJibG9nZnJhbWUub3JiaXRlci53ZWJzaXRlIn0",
-    "signature": "MHhhYjBkNDVlNTA5ZDhjYjM4Yzg3N2Y2NDRkZjdjYjU3NWIxYWUxMjYxODVhMzAyOWZkOTUwZWUxMjVhYzQ2Njk3NTEzZmJkODJlOTI4OWNjMzkyNTg5YmY2NzhkYzE3MWY1ZTMxNTQzNDlkYTc5OTIwN2M3NTEwODU3MmE3MDNlZDFj"
+    "payload": "eyJkb21haW4iOiJwaW5hdGEtYmxvZy1mcmFtZS5wYWdlcy5kZXYifQ",
+    "signature": "MHhmYTViM2Q1ODk5NjVhOTQ5OWQ1ODgxNjBhZjkwNDFiMzRhZTE5N2VjMzYyZDkzMzZhMTFjOTZiM2UyYWQyZmM5NWM2ODY5MDU3Njc1OTQxMDQwNmZiYmY5YmE5NDMyN2NmZWJkMGQzODlmZjE4M2Y1MTEwOGRhYTljNDZjN2QyMjFi"
   },
   "frame": {
     "version": "1",
     "name": "Pinata Blog",
-    "iconUrl": "https://blogframe.orbiter.website/icon.png",
-    "homeUrl": "https://blogframe.orbiter.website",
-    "imageUrl": "https://blogframe.orbiter.website/image.png",
-    "buttonTitle": "Launch",
-    "splashImageUrl": "https://blogframe.orbiter.website/splash.png",
-    "splashBackgroundColor": "#171420",
+    "iconUrl": "https://pinata-blog-frame.pages.dev/icon.png",
+    "homeUrl": "https://pinata-blog-frame.pages.dev",
+    "imageUrl": "https://pinata-blog-frame.pages.dev/image.png",
+    "buttonTitle": "Check this out",
+    "splashImageUrl": "https://pinata-blog-frame.pages.dev/splash.png",
+    "splashBackgroundColor": "#eeccff",
     "webhookUrl": "https://frames.pinataipfs.com/webhook"
   }
 }

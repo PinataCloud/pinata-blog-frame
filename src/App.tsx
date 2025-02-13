@@ -13,7 +13,7 @@ function App() {
       setContext(ctx);
       sdk.actions.ready();
 
-      if (ctx.client.added) {
+      if (ctx.location?.type === "notification") {
         try {
           sdk.actions.openUrl("https://pinata.cloud/blog");
           sdk.actions.close()
