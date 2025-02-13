@@ -13,6 +13,10 @@ function App() {
       setContext(ctx);
       sdk.actions.ready();
 
+      sdk.on('frameAdded', () => {
+        setContext(ctx)
+      });
+
       if (ctx.location?.type === "notification") {
         try {
           sdk.actions.openUrl("https://pinata.cloud/blog");
