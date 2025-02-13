@@ -25,8 +25,13 @@ function App() {
       if (ctx.location?.type === "notification") {
         try {
           const post = searchParams.get('post');
-          sdk.actions.openUrl(`https://pinata.cloud/blog/${post}`);
-          sdk.actions.close()
+          if (post) {
+            sdk.actions.openUrl(`https://pinata.cloud/blog/${post}`);
+            sdk.actions.close()
+          } else {
+            sdk.actions.openUrl(`https://pinata.cloud/blog`);
+            sdk.actions.close()
+          }
         } catch (error) {
           console.error("Redirect error:", error);
         }
